@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stick War Saga Mod Panel</string>
+    <string name="money_title">Sınırsız Para</string>
+    <string name="population_title">Sınırsız Nüfus</string>
+    <string name="generals_title">Özel Generaller</string>
+    <string name="time_title">Süre Atlama</string>
+    <string name="reset_title">Modları Sıfırla</string>
+</resources>
