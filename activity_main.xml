@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Başlık -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚔️ STICK WAR SAGA MOD PANEL"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/title"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Status Mesajı -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moda hoş geldiniz!"
+            android:textSize="16sp"
+            android:textColor="@color/status"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:background="@drawable/status_bg" />
+
+        <!-- 1. Sınırsız Para Bölümü -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/section_bg"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💰 Sınırsız Para"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/section_title"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etMoney"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Para miktarını girin"
+                android:inputType="number"
+                android:padding="12dp"
+                android:background="@drawable/input_bg"
+                android:textColorHint="@color/hint"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnApplyMoney"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Para Ekle"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_money"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- 2. Sınırsız Nüfus Bölümü -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/section_bg"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👥 Sınırsız Nüfus"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/section_title"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etPopulation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Nüfus limitini girin"
+                android:inputType="number"
+                android:padding="12dp"
+                android:background="@drawable/input_bg"
+                android:textColorHint="@color/hint"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnApplyPopulation"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Nüfus Ayarla"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_population"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- 3. Özel Generaller Bölümü -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/section_bg"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🛡️ Özel Generaller"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/section_title"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tüm generalleri ve özel yetenekleri unlock et"
+                android:textSize="14sp"
+                android:textColor="@color/hint"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnUnlockGenerals"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Tüm Generalleri Unlock Et"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_generals"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- 4. Süre Atlama Bölümü -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/section_bg"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⏩ Süre Atlama"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/section_title"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etGenerals"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Kaç saat atlamak istersiniz?"
+                android:inputType="number"
+                android:padding="12dp"
+                android:background="@drawable/input_bg"
+                android:textColorHint="@color/hint"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnSkipTime"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Zamanı Atla"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_time"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- 5. Sıfırla Bölümü -->
+        <Button
+            android:id="@+id/btnResetAll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="🔄 TÜM MODLARI SIFIRLA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_reset"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
